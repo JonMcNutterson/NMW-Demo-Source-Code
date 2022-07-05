@@ -36,6 +36,9 @@ class VisualsUISubState extends BaseOptionsMenu
 
 		var option:Option = new Option('Note Splashes', "If unchecked, hitting \"Sick!\" notes won't show particles.", 'noteSplashes', 'bool', true);
 		addOption(option);
+		
+		var option:Option = new Option('Black Bars', "If checked, Black Bars will be shown on the top and bottom of the screen.", 'bool', true);
+		addOption(option);
 
 		var option:Option = new Option('Hide HUD', 'If checked, hides most HUD elements.', 'hideHud', 'bool', false);
 		addOption(option);
