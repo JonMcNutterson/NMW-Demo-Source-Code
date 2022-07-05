@@ -1,0 +1,11 @@
+{
+	"idle_anim": "M Restrict",
+	"image": "Menu_Restrict",
+	"position": [
+		820,
+		124
+	],
+	"flipX": false,
+	"scale": 0.75,
+	"confirm_anim": ""
+}

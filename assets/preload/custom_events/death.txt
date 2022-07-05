@@ -1,0 +1,3 @@
+This allows you to add custom death animations in any song.
+just place the event anywhere in the chart (or the beginning)
+no values are needed

@@ -1,0 +1,9 @@
+{
+	"directory": "helipad",
+	"defaultZoom": 0.7,
+	"isPixelStage": false,
+
+	"boyfriend": [1020, 70],
+	"girlfriend": [159, 90],
+	"opponent": [-670, 130]
+}

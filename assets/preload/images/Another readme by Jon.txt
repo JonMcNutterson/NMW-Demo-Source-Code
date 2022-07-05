@@ -1,0 +1,1 @@
+Yes, I did borrow that Deimos stage from MashProTato as a temporary stage. But then made my own stage after. If you change the stage to the MashProTato one, the PhillyGlow Event particles will be visible.

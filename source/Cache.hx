@@ -4,6 +4,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.graphics.FlxGraphic;
+import flixel.util.FlxTimer;
+import flixel.tweens.FlxTween;
 import openfl.display.BitmapData;
 #if sys
 import sys.FileSystem;
@@ -16,6 +18,7 @@ class Cache extends FlxState
 {
 	var bitmapData:Map<String, FlxGraphic>;
 	var images:Array<String> = [];
+	var menuBG:FlxSprite;
 
 	override function create()
 	{
@@ -25,7 +28,7 @@ class Cache extends FlxState
 
 		bitmapData = new Map<String, FlxGraphic>();
 
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image('loadingScreens/loadingscreen-' + FlxG.random.int(1, 4)));
+		menuBG = new FlxSprite().loadGraphic(Paths.image('loadingScreens/loadingscreen-' + FlxG.random.int(1, 4)));
 		menuBG.screenCenter();
 		add(menuBG);
 
@@ -53,8 +56,7 @@ class Cache extends FlxState
 
 	function cache()
 	{
-		#if !linux
-		#if !android
+		#if (!linux && !android)
 		for (i in images)
 		{
 			var data:BitmapData = BitmapData.fromFile(SUtil.getPath() + "assets/shared/images/characters/" + i);
@@ -65,7 +67,15 @@ class Cache extends FlxState
 			trace(i);
 		}
 		#end
-		#end
-		FlxG.switchState(new TitleState());
+		new FlxTimer().start(2.5, function(tmr:FlxTimer)
+		{
+			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
+			FlxTween.tween(menuBG, {alpha: 0}, 1, {
+				onComplete: function(twn:FlxTween)
+				{
+					FlxG.switchState(new TitleState());
+				}
+			});
+		});
 	}
 }

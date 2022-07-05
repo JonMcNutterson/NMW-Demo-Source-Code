@@ -1,0 +1,50 @@
+{
+	"storyName": "The one and only",
+	"difficulties": "Casual",
+	"hideFreeplay": false,
+	"weekBackground": "hank",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"hanknbf",
+		""
+	],
+	"songs": [
+		[
+			"Murderface",
+			"hank",
+			[
+				255,
+				0,
+				73
+			]
+		],
+		[
+			"Mercenary",
+			"hank",
+			[
+				255,
+				0,
+				73
+			]
+		],
+		[
+			"Assassination",
+			"hank",
+			[
+				255,
+				0,
+				73
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				380,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "P2HankIdle"
+		},
+		{
+			"offsets": [
+				590,
+				-53
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": true,
+			"name": "P2HankLeft"
+		},
+		{
+			"offsets": [
+				330,
+				-85
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": true,
+			"name": "P2HankDown"
+		},
+		{
+			"offsets": [
+				450,
+				80
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": true,
+			"name": "P2HankUp"
+		},
+		{
+			"offsets": [
+				330,
+				-60
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": true,
+			"name": "P2HankRight"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Hank_Phase2_Assets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "hankknife",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		60
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

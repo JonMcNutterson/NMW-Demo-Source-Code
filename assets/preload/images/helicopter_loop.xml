@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="helicopter_loop.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="helicopter_loop0000" x="0" y="0" width="869" height="925" frameX="0" frameY="-4" frameWidth="869" frameHeight="929"/>
+	<SubTexture name="helicopter_loop0001" x="869" y="0" width="866" height="929" frameX="-3" frameY="0" frameWidth="869" frameHeight="929"/>
+</TextureAtlas>

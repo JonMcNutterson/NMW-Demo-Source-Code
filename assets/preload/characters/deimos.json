@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
-				231,
-				-60
+				-179,
+				50
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "Deimos Idle"
+			"fps": 24,
+			"name": "Deimos Idle",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				660,
-				-57
+				180,
+				63
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": true,
-			"name": "Deimos Left"
+			"fps": 24,
+			"name": "Deimos Left",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				320,
-				-130
+				-70,
+				-2
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": true,
-			"name": "Deimos Down"
+			"fps": 24,
+			"name": "Deimos Down",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				436,
-				160
+				26,
+				270
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": true,
-			"name": "Deimos Up"
+			"fps": 24,
+			"name": "Deimos Up",
+			"indices": []
 		},
 		{
-			"offsets": [
-				220,
-				-10
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": true,
-			"name": "Deimos Right"
+			"offsets": [
+				-120,
+				100
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Deimos Right",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,

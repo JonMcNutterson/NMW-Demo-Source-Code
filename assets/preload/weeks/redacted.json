@@ -1,0 +1,59 @@
+{
+	"storyName": "go back go back go back go back",
+	"difficulties": "Casual",
+	"hideFreeplay": false,
+	"weekBackground": "redacted",
+	"weekBefore": "1hankweek",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": false,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Eohhglqj-Hgjh",
+			"redacted",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
+			"Iodvkedqj",
+			"redacted",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
+			"Phdwkrrn",
+			"redacted",
+			[
+				0,
+				0,
+				0
+			]
+		],
+		[
+			"Whfkqrskloh",
+			"redacted",
+			[
+				0,
+				0,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"restrict",
+		""
+	],
+	"hiddenUntilUnlocked": true,
+	"weekName": ""
+}

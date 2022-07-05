@@ -1,202 +1,202 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-3,
 				5
 			],
-			"anim": "hey",
+			"loop": false,
 			"fps": 24,
-			"name": "BF HEY",
-			"indices": []
+			"anim": "hey",
+			"indices": [],
+			"name": "BF HEY"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				14,
 				18
 			],
-			"anim": "hurt",
+			"loop": false,
 			"fps": 24,
-			"name": "BF hit",
-			"indices": []
+			"anim": "hurt",
+			"indices": [],
+			"name": "BF hit"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				-4,
 				0
 			],
-			"anim": "scared",
+			"loop": true,
 			"fps": 24,
-			"name": "BF idle shaking",
-			"indices": []
+			"anim": "scared",
+			"indices": [],
+			"name": "BF idle shaking"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				37,
 				11
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "firstDeath",
-			"fps": 24,
-			"name": "BF dies",
-			"indices": []
+			"indices": [],
+			"name": "BF dies"
 		},
 		{
+			"offsets": [
+				245,
+				80
+			],
 			"loop": true,
-			"offsets": [
-				245,
-				80
-			],
+			"fps": 24,
 			"anim": "deathLoop",
-			"fps": 24,
-			"name": "BF Dead Loop",
-			"indices": []
+			"indices": [],
+			"name": "BF Dead Loop"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				245,
 				80
 			],
-			"anim": "deathConfirm",
+			"loop": false,
 			"fps": 24,
-			"name": "BF Dead confirm",
-			"indices": []
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "BF Dead confirm"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-10,
 				-16
 			],
-			"anim": "dodge",
+			"loop": false,
 			"fps": 24,
-			"name": "boyfriend dodge",
-			"indices": []
+			"anim": "dodge",
+			"indices": [],
+			"name": "boyfriend dodge"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				294,
 				267
 			],
-			"anim": "attack",
+			"loop": false,
 			"fps": 24,
-			"name": "boyfriend attack",
-			"indices": []
+			"anim": "attack",
+			"indices": [],
+			"name": "boyfriend attack"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-40,
 				-40
 			],
-			"anim": "pre-attack",
+			"loop": false,
 			"fps": 24,
-			"name": "bf pre attack",
+			"anim": "pre-attack",
+			"indices": [],
+			"name": "bf pre attack"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				45,
+				-20
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Hank Idle",
 			"indices": []
 		},
 		{
-			"offsets": [
-				245,
-				80
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "idle",
 			"loop": true,
-			"name": "Hank Idle"
-		},
-		{
 			"offsets": [
-				595,
-				32
+				365,
+				-88
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": true,
-			"name": "Hank Left"
+			"fps": 24,
+			"name": "Hank Left",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				130,
-				19
+				-130,
+				-91
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": true,
-			"name": "Hank Down"
+			"fps": 24,
+			"name": "Hank Down",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				180,
-				167
+				-20,
+				67
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": true,
-			"name": "Hank Up"
+			"fps": 24,
+			"name": "Hank Up",
+			"indices": []
 		},
 		{
+			"loop": true,
 			"offsets": [
-				262,
-				203
+				132,
+				93
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": true,
-			"name": "Hank Right"
+			"fps": 24,
+			"name": "Hank Right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				595,
-				32
+				365,
+				-88
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFTmiss",
-			"loop": false,
-			"name": "Hank Miss Left"
+			"fps": 24,
+			"name": "Hank Miss Left",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				130,
-				19
+				-130,
+				-91
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWNmiss",
-			"loop": false,
-			"name": "Hank Miss Down"
+			"fps": 24,
+			"name": "Hank Miss Down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				180,
-				167
+				-20,
+				67
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUPmiss",
-			"loop": false,
-			"name": "Hank Miss Up"
+			"fps": 24,
+			"name": "Hank Miss Up",
+			"indices": []
 		},
 		{
-			"offsets": [
-				262,
-				203
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHTmiss",
 			"loop": false,
-			"name": "Hank Miss Right"
+			"offsets": [
+				132,
+				93
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Hank Miss Right",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
