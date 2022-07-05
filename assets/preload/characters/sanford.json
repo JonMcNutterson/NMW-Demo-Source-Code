@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				300,
+				-30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Sanford Idle"
+		},
+		{
+			"offsets": [
+				610,
+				-40
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": true,
+			"name": "Sanford Left"
+		},
+		{
+			"offsets": [
+				288,
+				-89
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": true,
+			"name": "Sanford Down"
+		},
+		{
+			"offsets": [
+				492,
+				183
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": true,
+			"name": "Sanford Up"
+		},
+		{
+			"offsets": [
+				260,
+				-70
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": true,
+			"name": "Sanford Right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sanford",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "sanford",
+	"flip_x": false,
+	"healthbar_colors": [
+		95,
+		80,
+		195
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
