@@ -19,15 +19,12 @@ import openfl.utils.ByteArray;
  * @original author Ka Wing Chin
  * @modification's author: Saw (M.A. Jigsaw)
  */
-@:keep @:bitmap("assets/preload/images/android/joystick.png")
-class GraphicJoyStickInput extends BitmapData
-{
-}
 
-@:keep @:file("assets/preload/images/android/joystick.xml")
-class DataJoyStickInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end
-{
-}
+@:keep @:bitmap("assets/android/joystick.png")
+class GraphicJoyStickInput extends BitmapData {}
+
+@:keep @:file("assets/android/joystick.xml")
+class DataJoyStickInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end {}
 
 class FlxJoyStick extends FlxSpriteGroup
 {

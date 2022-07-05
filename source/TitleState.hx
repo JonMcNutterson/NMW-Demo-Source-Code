@@ -64,13 +64,8 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var ngSpr:FlxSprite;
-
 	var curWacky:Array<String> = [];
-
 	var wackyImage:FlxSprite;
-
-	var mustUpdate:Bool = false;
-
 	var titleJSON:TitleData;
 
 	public static var updateVersion:String = '';
@@ -356,7 +351,10 @@ class TitleState extends MusicBeatState
 			if (pressedEnter)
 			{
 				if (titleText != null)
+				{
 					titleText.animation.play('press');
+					titleText.centerOffsets();
+				}
 
 				FlxG.camera.flash(FlxColor.WHITE, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
@@ -366,14 +364,7 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					if (mustUpdate)
-					{
-						MusicBeatState.switchState(new OutdatedState());
-					}
-					else
-					{
-						MusicBeatState.switchState(new MainMenuState());
-					}
+					MusicBeatState.switchState(new MainMenuState());
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);

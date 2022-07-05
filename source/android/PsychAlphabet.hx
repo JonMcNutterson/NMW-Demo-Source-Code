@@ -358,21 +358,17 @@ class PsychAlphabet extends FlxSpriteGroup
 class AlphaCharacter extends FlxSprite
 {
 	public static var alphabet:String = 'abcdefghijklmnopqrstuvwxyz';
-
 	public static var numbers:String = '1234567890';
-
 	public static var symbols:String = "|~#$%()*+-:;<=>@[]^_.,'!?";
 
 	public var row:Int = 0;
-
 	private var textSize:Float = 1;
 
 	public function new(x:Float, y:Float, textSize:Float)
 	{
 		super(x, y);
-		var tex = Paths.getSparrowAtlas('android/menu/alphabet');
-		frames = tex;
 
+		frames = FlxAtlasFrames.fromSparrow('assets/android/menu/alphabet.png', 'assets/android/menu/alphabet.xml');
 		setGraphicSize(Std.int(width * textSize));
 		updateHitbox();
 		this.textSize = textSize;

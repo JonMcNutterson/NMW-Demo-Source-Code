@@ -228,14 +228,14 @@ class Menu extends MusicBeatState
 		add(inputvari);
 
 		leftArrow = new FlxSprite(inputvari.x - 60, inputvari.y + 50);
-		leftArrow.frames = Paths.getSparrowAtlas('android/menu/arrows');
+		leftArrow.frames = FlxAtlasFrames.fromSparrow('assets/android/menu/arrows.png', 'assets/android/menu/arrows.xml');
 		leftArrow.animation.addByPrefix('idle', 'arrow left');
 		leftArrow.animation.addByPrefix('press', 'arrow push left');
 		leftArrow.animation.play('idle');
 		add(leftArrow);
 
 		rightArrow = new FlxSprite(inputvari.x + inputvari.width + 10, leftArrow.y);
-		rightArrow.frames = Paths.getSparrowAtlas('android/menu/arrows');
+		rightArrow.frames = FlxAtlasFrames.fromSparrow('assets/android/menu/arrows.png', 'assets/android/menu/arrows.xml');
 		rightArrow.animation.addByPrefix('idle', 'arrow right');
 		rightArrow.animation.addByPrefix('press', 'arrow push right', 24, false);
 		rightArrow.animation.play('idle');

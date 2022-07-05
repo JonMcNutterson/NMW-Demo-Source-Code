@@ -16,7 +16,7 @@ using StringTools;
 
 class Cache extends FlxState
 {
-	var bitmapData:Map<String, FlxGraphic>;
+	var bitmapData:Map<String, FlxGraphic> = new Map<String, FlxGraphic>();
 	var images:Array<String> = [];
 	var menuBG:FlxSprite;
 
@@ -26,11 +26,11 @@ class Cache extends FlxState
 		FlxG.android.preventDefaultKeys = [BACK];
 		#end
 
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
 		FlxG.mouse.visible = false;
-
 		FlxG.worldBounds.set(0, 0);
-
-		bitmapData = new Map<String, FlxGraphic>();
 
 		menuBG = new FlxSprite().loadGraphic(Paths.image('loadingScreens/loadingscreen-' + FlxG.random.int(1, 4)));
 		menuBG.screenCenter();
@@ -41,6 +41,7 @@ class Cache extends FlxState
 		{
 			if (!i.endsWith(".png"))
 				continue;
+
 			images.push(i);
 		}
 		#end
@@ -71,7 +72,7 @@ class Cache extends FlxState
 			trace(i);
 		}
 		#end
-		new FlxTimer().start(2.5, function(tmr:FlxTimer)
+		new FlxTimer().start(1, function(tmr:FlxTimer)
 		{
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 			FlxTween.tween(menuBG, {alpha: 0}, 1, {

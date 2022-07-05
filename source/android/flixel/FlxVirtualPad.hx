@@ -18,15 +18,11 @@ import openfl.utils.ByteArray;
  * @original author Ka Wing Chin
  * @modification's author: Saw (M.A. Jigsaw)
  */
-@:keep @:bitmap("assets/preload/images/android/virtualpad.png")
-class GraphicVirtualInput extends BitmapData
-{
-}
+@:keep @:bitmap("assets/android/virtualpad.png")
+class GraphicVirtualInput extends BitmapData {}
 
-@:keep @:file("assets/preload/images/android/virtualpad.xml")
-class DataVirtualInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end
-{
-}
+@:keep @:file("assets/android/virtualpad.xml")
+class DataVirtualInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end {}
 
 class FlxVirtualPad extends FlxSpriteGroup
 {
@@ -183,12 +179,10 @@ class FlxVirtualPad extends FlxSpriteGroup
 		buttonUp = null;
 		buttonDown = null;
 		buttonRight = null;
-
 		buttonLeft2 = null;
 		buttonUp2 = null;
 		buttonDown2 = null;
 		buttonRight2 = null;
-
 		buttonA = null;
 		buttonB = null;
 		buttonC = null;
@@ -210,7 +204,7 @@ class FlxVirtualPad extends FlxSpriteGroup
 	 * @param   Callback   The callback for the button.
 	 * @return  The button
 	 */
-	public function createButton(X:Float, Y:Float, Width:Int, Height:Int, Graphic:String, ?Color:Int = 0xFF808080, ?OnClick:Void->Void):FlxButton
+	public function createButton(X:Float, Y:Float, Width:Int, Height:Int, Graphic:String, ?Color:Int, ?OnClick:Void->Void):FlxButton
 	{
 		var button:FlxButton = new FlxButton(X, Y);
 		button.frames = FlxTileFrames.fromFrame(getVirtualInputFrames().getByName(Graphic), FlxPoint.get(Width, Height));

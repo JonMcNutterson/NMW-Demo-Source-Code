@@ -19,15 +19,11 @@ import openfl.utils.ByteArray;
  * @original author: luckydog
  * @modifications author: Saw (M.A. Jigsaw)
  */
-@:keep @:bitmap("assets/preload/images/android/hitbox.png")
-class GraphicHitboxInput extends BitmapData
-{
-}
+@:keep @:bitmap("assets/android/hitbox.png")
+class GraphicHitboxInput extends BitmapData {}
 
-@:keep @:file("assets/preload/images/android/hitbox.xml")
-class DataHitboxInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end
-{
-}
+@:keep @:file("assets/android/hitbox.xml")
+class DataHitboxInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end {}
 
 class FlxHitbox extends FlxSpriteGroup
 {
@@ -53,10 +49,10 @@ class FlxHitbox extends FlxSpriteGroup
 		hitbox = new FlxSpriteGroup();
 		hitbox.scrollFactor.set();
 
-		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left')));
-		hitbox.add(add(buttonDown = createHitbox(FlxG.width / 4, 0, 'down')));
-		hitbox.add(add(buttonUp = createHitbox(FlxG.width / 2, 0, 'up')));
-		hitbox.add(add(buttonRight = createHitbox((FlxG.width / 2) + (FlxG.width / 4), 0, 'right')));
+		hitbox.add(add(buttonLeft = createHitbox(0, 0, 'left', 0xFFFF00FF)));
+		hitbox.add(add(buttonDown = createHitbox(FlxG.width / 4, 0, 'down', 0xFF00FFFF)));
+		hitbox.add(add(buttonUp = createHitbox(FlxG.width / 2, 0, 'up', 0xFF00FF00)));
+		hitbox.add(add(buttonRight = createHitbox((FlxG.width / 2) + (FlxG.width / 4), 0, 'right', 0xFFFF0000)));
 	}
 
 	override function destroy()
@@ -79,7 +75,7 @@ class FlxHitbox extends FlxSpriteGroup
 	 * @param   Callback   The callback for the button.
 	 * @return  The button
 	 */
-	public function createHitbox(X:Float, Y:Float, Graphic:String, ?Color:Int = 0xFF808080, ?OnClick:Void->Void):FlxButton
+	public function createHitbox(X:Float, Y:Float, Graphic:String, ?Color:Int, ?OnClick:Void->Void):FlxButton
 	{
 		var button:FlxButton = new FlxButton(X, Y);
 		button.loadGraphic(FlxGraphic.fromFrame(getHitboxInputFrames().getByName(Graphic)));
