@@ -959,7 +959,7 @@ class PlayState extends MusicBeatState
 		add(timeTxt);
 		timeBarBG.sprTracker = timeBar;
 		
-		var blackBars:BGSprite = new BGSprite('blackBars', 0, 0, 0, 0);
+		var blackBars:BGSprite = new BGSprite('Black_Bars', 0, 0, 0, 0);
 		blackBars.visible = ClientPrefs.blackBars;
 		add(blackBars);
 
