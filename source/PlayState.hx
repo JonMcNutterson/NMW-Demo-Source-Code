@@ -1427,7 +1427,7 @@ class PlayState extends MusicBeatState
 		add(bg);
 
 		#if !android
-		var video:FlxVideo = new FlxVideo(fileName);
+		var video:FlxVideo = new FlxVideo(filepath);
 		video.finishCallback = function()
 		{
 			remove(bg);
@@ -1436,7 +1436,7 @@ class PlayState extends MusicBeatState
 		return;
 		#else
 		var video:VideoHandler = new VideoHandler();
-		video.playVideo(Paths.video(name));
+		video.playVideo(Paths.video(filepath));
 		video.finishCallback = function()
 		{
 			remove(bg);
