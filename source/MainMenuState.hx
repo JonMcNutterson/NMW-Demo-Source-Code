@@ -172,10 +172,10 @@ class MainMenuState extends MusicBeatState
 		}
 		#end
 
-		#if android
+		/*#if android
 		addVirtualPad(UP_DOWN, A_B);
 		virtualPad.y = -44;
-		#end
+		#end*/
 
 		super.create();
 	}
@@ -222,8 +222,26 @@ class MainMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new TitleState());
 			}
+			
+			var touch:Bool = false;
 
-			if (controls.ACCEPT)
+      //stole this from funkin regen ext lmao!!
+      #if mobile
+			menuItems.forEach(function(spr:FlxSprite)
+			{
+				if (FlxG.touches.justStarted().length > 0)
+				{
+					var _touch:Bool = FlxG.touches.getFirst().overlaps(spr, camera);
+					if (_touch)
+					{
+						curSelected = spr.ID;
+						changeItem();
+					}
+					touch = _touch || touch;
+				}
+			});
+			#end
+			if (controls.ACCEPT || touch)
 			{
 				if (optionShit[curSelected] == 'donate')
 				{
