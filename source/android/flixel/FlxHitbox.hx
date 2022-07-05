@@ -79,7 +79,7 @@ class FlxHitbox extends FlxSpriteGroup
 	 * @param   Callback   The callback for the button.
 	 * @return  The button
 	 */
-	public function createHitbox(X:Float, Y:Float, Graphic:String, ?Color:Int = 0xFFFF0000, ?OnClick:Void->Void):FlxButton
+	public function createHitbox(X:Float, Y:Float, Graphic:String, ?Color:Int = 0xFF808080, ?OnClick:Void->Void):FlxButton
 	{
 		var button:FlxButton = new FlxButton(X, Y);
 		button.loadGraphic(FlxGraphic.fromFrame(getHitboxInputFrames().getByName(Graphic)));
