@@ -210,7 +210,7 @@ class FlxVirtualPad extends FlxSpriteGroup
 	 * @param   Callback   The callback for the button.
 	 * @return  The button
 	 */
-	public function createButton(X:Float, Y:Float, Width:Int, Height:Int, Graphic:String, ?Color:Int = 0xFFFF0000, ?OnClick:Void->Void):FlxButton
+	public function createButton(X:Float, Y:Float, Width:Int, Height:Int, Graphic:String, ?Color:Int = 0xFF808080, ?OnClick:Void->Void):FlxButton
 	{
 		var button:FlxButton = new FlxButton(X, Y);
 		button.frames = FlxTileFrames.fromFrame(getVirtualInputFrames().getByName(Graphic), FlxPoint.get(Width, Height));
