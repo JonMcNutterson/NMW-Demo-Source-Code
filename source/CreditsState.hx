@@ -110,7 +110,7 @@ class CreditsState extends MusicBeatState
 			SansCzar::sansczar::Charted for Flashbang::link::00aaff
 			DJ Cyrus::djcyrus::Charted for Bleeding-Edge::link::7b2518
 
-			Android Porter's
+			Android Porters
 			M.A. Jigsaw::jigsaw::Main Programmer of the Android Port::https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ::ffffff
 			Poyo::poyo::Helper for it::https://www.youtube.com/channel/UCRB_pRbpYPjrUpnQyPUVG5w::e46796
 
