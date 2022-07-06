@@ -3,6 +3,7 @@ package android;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup;
+import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.util.FlxSave;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
