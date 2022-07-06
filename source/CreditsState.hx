@@ -111,7 +111,7 @@ class CreditsState extends MusicBeatState
 			DJ Cyrus::djcyrus::Charted for Bleeding-Edge::link::7b2518
 
 			Android Porter's
-			M.A. JIgsaw::jigsaw::Main Programmer of the Android Port::https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ::ffffff
+			M.A. Jigsaw::jigsaw::Main Programmer of the Android Port::https://www.youtube.com/channel/UC2Sk7vtPzOvbVzdVTWrribQ::ffffff
 			Poyo::poyo::Helper for it::https://www.youtube.com/channel/UCRB_pRbpYPjrUpnQyPUVG5w::e46796
 
 			Voice Cast
