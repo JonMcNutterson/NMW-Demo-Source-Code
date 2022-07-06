@@ -20,10 +20,14 @@ import openfl.utils.ByteArray;
  * @modifications author: Saw (M.A. Jigsaw)
  */
 @:keep @:bitmap("assets/android/hitbox.png")
-class GraphicHitboxInput extends BitmapData {}
+class GraphicHitboxInput extends BitmapData
+{
+}
 
 @:keep @:file("assets/android/hitbox.xml")
-class DataHitboxInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end {}
+class DataHitboxInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end
+{
+}
 
 class FlxHitbox extends FlxSpriteGroup
 {

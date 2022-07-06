@@ -715,10 +715,6 @@ class PlayState extends MusicBeatState
 					bgGhouls.antialiasing = false;
 					add(bgGhouls);
 				}
-				else
-				{
-					
-				}
 		}
 
 		if (isPixelStage)
@@ -955,7 +951,7 @@ class PlayState extends MusicBeatState
 		add(timeBar);
 		add(timeTxt);
 		timeBarBG.sprTracker = timeBar;
-		
+
 		var blackBars:BGSprite = new BGSprite('Black_Bars', 0, 0, 0, 0);
 		blackBars.visible = ClientPrefs.blackBars;
 		add(blackBars);
@@ -1407,9 +1403,9 @@ class PlayState extends MusicBeatState
 		#if VIDEOS_ALLOWED
 		var filepath:String = Paths.video(name);
 		#if sys
-		if(!FileSystem.exists(filepath))
+		if (!FileSystem.exists(filepath))
 		#else
-		if(!OpenFlAssets.exists(filepath))
+		if (!OpenFlAssets.exists(filepath))
 		#end
 		{
 			FlxG.log.warn('Couldnt find video file: ' + name);
@@ -1442,7 +1438,6 @@ class PlayState extends MusicBeatState
 		}
 		return;
 		#end
-
 		#end
 		startAndEnd();
 	}

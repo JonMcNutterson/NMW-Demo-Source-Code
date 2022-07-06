@@ -19,10 +19,14 @@ import openfl.utils.ByteArray;
  * @modification's author: Saw (M.A. Jigsaw)
  */
 @:keep @:bitmap("assets/android/virtualpad.png")
-class GraphicVirtualInput extends BitmapData {}
+class GraphicVirtualInput extends BitmapData
+{
+}
 
 @:keep @:file("assets/android/virtualpad.xml")
-class DataVirtualInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end {}
+class DataVirtualInput extends #if (lime_legacy || nme) ByteArray #else ByteArrayData #end
+{
+}
 
 class FlxVirtualPad extends FlxSpriteGroup
 {
