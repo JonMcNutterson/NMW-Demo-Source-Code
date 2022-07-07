@@ -1,0 +1,109 @@
+{
+	"song": {
+		"speed": 3,
+		"stage": "deimostemp",
+		"player1": "bf",
+		"player2": "deimos",
+		"player3": null,
+		"events": [
+			[
+				92800,
+				[
+					[
+						"Philly Glow",
+						"1",
+						"DB4035"
+					]
+				]
+			],
+			[
+				92900,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"DB4035"
+					]
+				]
+			],
+			[
+				99200,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"14AAF5"
+					]
+				]
+			],
+			[
+				105600,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"DB4035"
+					]
+				]
+			],
+			[
+				107200,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"14AAF5"
+					]
+				]
+			],
+			[
+				108600,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"DB4035"
+					]
+				]
+			],
+			[
+				108800,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"14AAF5"
+					]
+				]
+			],
+			[
+				110400,
+				[
+					[
+						"Philly Glow",
+						"2",
+						"DB4035"
+					]
+				]
+			],
+			[
+				112000,
+				[
+					[
+						"Philly Glow",
+						"0",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 150,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Whfkqrskloh"
+	}
+}
